@@ -54,7 +54,7 @@ public class ContaBancaria {
 	}
 	
 	public String totring(){
-		return "Número Account: " + numberCount + ",Name: " + nameHolder + ",Saldo: " + saldo;
+		return "Número Account: " + numberCount + "\nName: " + nameHolder + "\nSaldo: " + saldo;
 	}
 	
 	
