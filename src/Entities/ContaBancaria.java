@@ -29,6 +29,34 @@ public class ContaBancaria {
 		this.saldo = saldo;
 	}
 	
+	public ContaBancaria(int numberCount, String nameHolder, double saldo){
+		this.numberCount = numberCount;
+		this.nameHolder = nameHolder;
+		this.saldo = saldo;
+	}
+	
+	public ContaBancaria(int numberCount, String nameHolder){
+		this.numberCount = numberCount;
+		this.nameHolder = nameHolder;
+		saldo = 0;
+	}
+	
+	public void sacar(double valor){
+		if(saldo > valor){
+			saldo -= valor;
+		}else{
+			System.out.println("Saldo Insuficiente!!");
+		}
+	}
+	
+	public void depositar(double valor){
+		saldo += valor;
+	}
+	
+	public String totring(){
+		return "Número Account: " + numberCount + ",Name: " + nameHolder + ",Saldo: " + saldo;
+	}
+	
 	
 
 }
